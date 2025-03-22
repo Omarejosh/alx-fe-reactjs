@@ -5,6 +5,7 @@ import './App.css'
 import Header from './Header';
 import MainContent from './MainContent';
 import Footer from './Footer';
+import UserProfile from './UserProfile';
 import WelcomeMessage from '<div className="jsx"</div>'
 <WelcomeMessage className="jsx"></WelcomeMessage>
 
@@ -14,7 +15,8 @@ function App() {
   return (
     <>
       <div>
-     
+      <UserProfile name="John Doe" age={30} bio="A passionate developer and tech enthusiast." />
+
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -38,7 +40,7 @@ function App() {
       <Header />
        <MainContent />
         <Footer />
-
+        <UserProfile/>
     </>
     
   )
